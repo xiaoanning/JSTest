@@ -13,6 +13,7 @@
 		4D3516D71F57EEFC002C84CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3516D51F57EEFC002C84CA /* Main.storyboard */; };
 		4D3516D91F57EEFC002C84CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3516D81F57EEFC002C84CA /* Assets.xcassets */; };
 		4D3516DC1F57EEFC002C84CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3516DA1F57EEFC002C84CA /* LaunchScreen.storyboard */; };
+		4D3516E81F57F09F002C84CA /* File.html in Resources */ = {isa = PBXBuildFile; fileRef = 4D3516E71F57F09F002C84CA /* File.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4D3516D81F57EEFC002C84CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3516DB1F57EEFC002C84CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3516DD1F57EEFC002C84CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3516E41F57EF81002C84CA /* JSObjcDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjcDelegate.h; sourceTree = "<group>"; };
+		4D3516E71F57F09F002C84CA /* File.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = File.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		4D3516CB1F57EEFC002C84CA /* JSTest */ = {
 			isa = PBXGroup;
 			children = (
+				4D3516E31F57EF6F002C84CA /* JavaScriptCore */,
 				4D3516CF1F57EEFC002C84CA /* AppDelegate.h */,
 				4D3516D01F57EEFC002C84CA /* AppDelegate.m */,
 				4D3516D21F57EEFC002C84CA /* ViewController.h */,
@@ -77,6 +81,15 @@
 				4D3516CD1F57EEFC002C84CA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D3516E31F57EF6F002C84CA /* JavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				4D3516E71F57F09F002C84CA /* File.html */,
+				4D3516E41F57EF81002C84CA /* JSObjcDelegate.h */,
+			);
+			path = JavaScriptCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3516E81F57F09F002C84CA /* File.html in Resources */,
 				4D3516DC1F57EEFC002C84CA /* LaunchScreen.storyboard in Resources */,
 				4D3516D91F57EEFC002C84CA /* Assets.xcassets in Resources */,
 				4D3516D71F57EEFC002C84CA /* Main.storyboard in Resources */,
@@ -273,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.JSTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.JSTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
